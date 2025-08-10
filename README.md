@@ -1,6 +1,6 @@
 # Flask-demo-app
 
-A simple **Flask based web application** that display styled page 
+A simple **Flask based web application** that display styled page .
 This project demonstrate :
 - Basic of Flask routing 
 - HTML templating
