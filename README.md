@@ -21,11 +21,10 @@ This project demonstrate :
 Flask-demo-app/
 │
 ├── app.py               # Main Flask application
-├── requirements.txt     # Python dependencies
 ├── README.md            # Project documentation
-├── static/              # Static files (CSS, images, JS)
+├── static/              # Static files 
 │   └── style.css
-├── templates/           # HTML templates
+├── templates/           # templates
 │   └── index.html
 
 ```
