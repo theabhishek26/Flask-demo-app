@@ -10,7 +10,7 @@ This project demonstrate :
 
 # Features
 - Flask backend serving HTML templates
-- Static CSS  for the desogn 
+- Static CSS  for the design 
 - Rsponsive
 
 
