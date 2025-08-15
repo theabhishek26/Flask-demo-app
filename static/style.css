@@ -1,28 +1,339 @@
 body {
-    background: linear-gradient(to right, #5f8cffff, #bafe7bff);
-    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #5f8cff 0%, #bafe7b 100%);
+    font-family: 'Segoe UI', 'Arial', sans-serif;
     margin: 0;
-    padding: 20px;
-    color: #333;
+    padding: 0;
+    color: #222;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    background: rgba(255,255,255,0.92);
+    box-shadow: 0 2px 8px rgba(95,140,255,0.10);
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 60px;
+}
+
+.nav-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #5f8cff;
+    letter-spacing: 1px;
+    margin-right: 40px; /* Add spacing between logo and links */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin:0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #222;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-links li a:hover {
+    background: #5f8cff;
+    color: #fff;
 }
 
 .container {
+    max-width: 750px;
+    width: 95%;
+    background: rgba(255,255,255,0.97);
+    padding: 70px 30px 40px 30px;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
     text-align: center;
-    background-color: rgba(253, 226, 226, 0.8);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 90px 20px 20px 20px;
 }
+
+h1 {
+    font-size: 2.7em;
+    color: #5f8cff;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #3a3a3a;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.35em;
+}
+
 .intro {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    color: #333;
 }
 
 .company {
-    font-size: 1.2em;
-    color: #555;
+    font-weight: bold;
+    color: #5f8cff;
+}
+
+.role {
+    font-weight: bold;
+    color: #bafe7b;
+}
+
+.details ul, .future ul, .achievements ul {
+    text-align: left;
+    margin: 0 auto 10px auto;
+    padding-left: 20px;
+    max-width: 500px;
+}
+
+.achievements {
+    margin-top: 30px;
+    background: #f8fff4;
+    border-radius: 12px;
+    padding: 18px 10px;
+    box-shadow: 0 2px 8px rgba(186,254,123,0.08);
+}
+
+.testimonials {
+    margin-top: 30px;
+}
+
+.testimonial-card {
+    background: #fff8f4;
+    border-left: 4px solid #5f8cff;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 10px auto;
+    max-width: 500px;
+    box-shadow: 0 2px 8px rgba(95,140,255,0.08);
+    text-align: left;
+}
+
+.testimonial-card span {
+    display: block;
+    margin-top: 8px;
+    color: #5f8cff;
+    font-size: 0.95em;
+    font-style: italic;
+}
+
+.projects {
+    margin-top: 30px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.project-card {
+    background: #f4f8ff;
+    border: 1px solid #e0eaff;
+    border-radius: 12px;
+    padding: 18px 16px;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(95,140,255,0.08);
+    text-align: left;
+    transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 16px rgba(95,140,255,0.18);
+}
+
+.project-card h3 {
+    margin: 0 0 8px 0;
+    color: #5f8cff;
+    font-size: 1.1em;
+}
+
+.project-card p {
+    margin: 0;
+    font-size: 0.98em;
+    color: #333;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.skill-list span {
+    background: #5f8cff;
+    color: #fff;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 1em;
+    box-shadow: 0 2px 8px rgba(95,140,255,0.08);
+    transition: background 0.2s;
+}
+
+.skill-list span:hover {
+    background: #bafe7b;
+    color: #222;
+}
+
+.quote {
+    margin: 30px 0 20px 0;
+    font-style: italic;
+    color: #444;
+}
+
+.quote blockquote {
+    border-left: 4px solid #5f8cff;
+    padding-left: 15px;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.contact {
+    margin-top: 25px;
+    font-size: 1em;
+}
+
+.contact a {
+    color: #5f8cff;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.2s;
+}
+
+.contact a:hover {
+    color: #bafe7b;
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 98vw;
+        padding: 60px 10px 40px 10px;
+    }
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 90vw;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0 10px;
+        height: auto;
+    }
+    .nav-links {
+        gap: 10px;
+    }
+    .container {
+        padding: 30px 4px 20px 4px;
+        margin-top: 80px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .skill-list span {
+    background: #5f8cff;
+    color: #fff;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 1em;
+    box-shadow: 0 2px 8px rgba(95,140,255,0.08);
+    transition: background 0.2s;
+}
+
+.skill-list span:hover {
+    background: #bafe7b;
+    color: #222;
+}
+
+.quote {
+    margin: 30px 0 20px 0;
+    font-style: italic;
+    color: #444;
+}
+
+.quote blockquote {
+    border-left: 4px solid #5f8cff;
+    padding-left: 15px;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.contact {
+    margin-top: 25px;
+    font-size: 1em;
+}
+
+.contact a {
+    color: #5f8cff;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.2s;
+}
+
+.contact a:hover {
+    color: #bafe7b;
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 98vw;
+        padding: 60px 10px 40px 10px;
+    }
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 90vw;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0 10px;
+        height: auto;
+    }
+    .nav-links {
+        gap: 10px;
+    }
+    .container {
+        padding: 30px 4px 20px 4px;
+        margin-top: 80px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .skill-list span {
+        font-size: 0.95em;
+        padding: 6px 10px;
+    }
 }
